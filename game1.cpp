@@ -62,7 +62,7 @@ int main()
       comp="scissors";
   }
   
-cout<<"\n\nstone paper scissors game\n"<<endl;
+cout<<"\nstone paper scissors game\n"<<endl;
 
 cout<<"Enter your move: "<<endl;
 getline(cin,user);
