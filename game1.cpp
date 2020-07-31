@@ -94,7 +94,7 @@ getline(cin,user);
        
   }
   
-  cout<<"\nEnter 0 as your move and press enter to exit or continue playing !";
+  
   
   
 
