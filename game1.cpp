@@ -94,7 +94,7 @@ getline(cin,user);
        
   }
   
-  cout<<"thanks for playing!"<<endl;
+  cout<<"thanks for playing the game!"<<endl;
   
   
 
