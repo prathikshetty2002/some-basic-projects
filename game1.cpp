@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int result1(string user, string comp)
+int result1(string user, string comp)//program logic  about winning
 {   
     if(user==comp)
     {
@@ -37,7 +37,7 @@ int result1(string user, string comp)
  
 
 
-   return result1(user, comp);
+  return 0;
 }
 
 
@@ -48,7 +48,7 @@ int main()
     int num;
     for(int i=0;i<11;i++)
 {
-    srand(time(0));
+    srand(time(0));//generating random numbers
     num=rand()%100+1;
     if(num<33){
         comp="stone";
@@ -66,7 +66,7 @@ cout<<"\nstone paper scissors game\n"<<endl;
 
 cout<<"Enter your move: "<<endl;
 getline(cin,user);
- try
+ try//try block
  {
      if(user=="stone" || user=="paper" || user=="scissors")
      {
@@ -107,11 +107,11 @@ getline(cin,user);
      
  else{
  
-   throw "Exception-invalid input,enter stone,paper or scissors!";
+   throw "Exception-invalid input,enter stone,paper or scissors!";//exception handling
   
  }
  }
-catch(const char* error)
+catch(const char* error)//catch block
  {
      cerr << error << '\n';
      
