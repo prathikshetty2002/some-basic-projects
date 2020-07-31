@@ -66,9 +66,11 @@ cout<<"\n\nstone paper scissors game\n"<<endl;
 
 cout<<"Enter your move: "<<endl;
 getline(cin,user);
-
-
-  int result=result1(user, comp);
+ try
+ {
+     if(user=="stone" || user=="paper" || user=="scissors")
+     {
+         int result=result1(user, comp);
 
    if(result==1)
    {
@@ -100,9 +102,22 @@ getline(cin,user);
 
 }
   
-
-
+         
+     
+     
+ else{
+ 
+   throw "Exception-invalid input,enter stone,paper or scissors!";
   
-return 0;
-
+ }
+ }
+catch(const char* error)
+ {
+     cerr << error << '\n';
+     
+ }
+ 
 }
+return 0;
+}
+
